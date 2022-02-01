@@ -1,0 +1,6 @@
+# Build Instructions
+
+```
+$ npm i
+$ yarn build
+```
