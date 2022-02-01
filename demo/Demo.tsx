@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import { PigeonIcon } from './PigeonIcon'
-import { Point, Map, Marker, Draggable, ZoomControl } from '../src'
+import { Line, Point, Map, Marker, Draggable, ZoomControl } from '../src'
 import * as providers from '../src/providers'
 
 const markers = {
@@ -169,6 +169,9 @@ export function Demo(): JSX.Element {
             <PigeonIcon width={100} height={95} />
           </Draggable>
           <ZoomControl />
+          <Line coordsArray={[markers.leuven1[0], markers.leuven2[0]]} 
+            style={{ stroke:'rgb(0,255,0)', strokeWidth: 2 }}/>
+
         </Map>
       </div>
       <div>
