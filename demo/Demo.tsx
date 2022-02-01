@@ -169,7 +169,8 @@ export function Demo(): JSX.Element {
             <PigeonIcon width={100} height={95} />
           </Draggable>
           <ZoomControl />
-          <Line coordsArray={[markers.leuven1[0], markers.leuven2[0]]} />
+          <Line coordsArray={[markers.leuven1[0], markers.leuven2[0]]} 
+            style={{ stroke:'rgb(0,255,0)', strokeWidth: 2 }}/>
 
         </Map>
       </div>
